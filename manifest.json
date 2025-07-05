@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Minimal Mode",
+  "version": "1.0",
+  "description": "Hide likes, comments, and shares on LinkedIn to reduce engagement bias.",
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
